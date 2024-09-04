@@ -1,0 +1,350 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Travel agency</title>
+<meta name="description" content>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/favicon.png">
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/slicknav.css">
+<link rel="stylesheet" href="assets/css/animate.min.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="assets/css/themify-icons.css">
+<link rel="stylesheet" href="assets/css/slick.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  /* Custom styles for impressive design and animations */
+  #reservation-section {
+      margin: 50px 0;
+      text-align: center;
+  }
+  #reservation-section .form-row {
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    gap: 20px;
+}
+#reservation-section .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 400px;
+}
+#reservation-section select, #reservation-section button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+  #reservation-section select, #reservation-section button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+      min-width:200px;
+  }
+  #reservation-section .btn-reserve:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+  }
+  #reservation-section .btn-reserve {
+      background-color: #28a745;
+      color: #fff;
+      width: 100%;
+  }
+  #reservation-modal .modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#reservation-modal .modal-content {
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+#reservation-modal .modal-body {
+    padding: 100px;
+}
+  @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  }
+  </style>
+</head>
+<body>
+<header>
+<div class="header-area">
+<div class="main-header header-sticky">
+<div class="container-fluid">
+<div class="row align-items-center">
+
+<div class="col-xl-2 col-lg-2">
+<div class="logo">
+<a href="index.html"><img class="logo" src="assets/img/logo/logo.png" alt></a>
+</div>
+</div>
+<div class="col-xl-10 col-lg-10">
+<div class="menu-wrapper d-flex align-items-center justify-content-end">
+
+<div class="main-menu d-none d-lg-block">
+<nav>
+<ul id="navigation">
+<li><a href="index.html">Home</a></li>
+<li><a href="event.html">Tours</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="#">Transfers</a>
+  <ul class="submenu">
+  <li><a href="blog.html">Short Transfers</a></li>
+  <li><a href="events_details.html">Long Transfers</a></li>
+  <li><a href="blog_details.html">Airport Transfers</a></li>
+  <!-- <li><a href="elements.html">Element</a></li> -->  
+</ul>
+</li>
+<li><a href="contact.html">Contact</a></li>
+
+<li class="button-header">
+<a href="#" class="header-btn"> <i class="fas fa-phone-alt"></i> +20 (12) 005 13381</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+
+<div class="col-12">
+<div class="mobile_menu d-block d-lg-none"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+
+<div class="slider-area">
+<div class="single-slider slider-height2 slider-bg2 slider-bg5 d-flex align-items-center ">
+<div class="container">
+<div class="row">
+<div class="col-xl-12">
+<div class="hero__caption hero__caption2 text-center">
+<h2>Transfers</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="reservation-section" class="container">
+  <h2 style="margin-left: 180px;">Book Your Transfer</h2>
+  <div class="form-row w-50 mx-auto">
+    <div class="col-md-4 form-group">
+        <label for="from-location">From</label>
+        <select id="from-location" class="nice-select form-control">
+            <option value="">Select Location</option>
+            <option value="Location1">Location 1</option>
+            <option value="Location2">Location 2</option>
+            <option value="Location3">Location 3</option>
+        </select>
+    </div>
+    <div class="col-md-4 form-group">
+        <label for="to-location">To</label>
+        <select id="to-location" class="nice-select form-control">
+            <option value="">Select Location</option>
+            <option value="Location1">Location 1</option>
+            <option value="Location2">Location 2</option>
+            <option value="Location3">Location 3</option>
+        </select>
+    </div>
+      <div class="col-md-2">
+          <button id="reserve-btn" class="btn-reserve form-control" disabled>Reserve</button>
+      </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="reservation-modal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="reservationModalLabel" style="margin-top: 20px; background-color: khaki;">Confirm Reservation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group" style="margin-top: 20px;">
+            <label for="passenger-count">Number of Passengers</label>
+            <select id="passenger-count" class="form-control">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="reservation-date">Choose Date</label>
+            <input type="date" class="form-control" id="reservation-date">
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top: 50px;">Confirm</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</main>
+<footer>
+<div class="footer-wrapper">
+<div class="footer-area footer-padding">
+<div class="container">
+<div class="row justify-content-between">
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+<div class="single-footer-caption mb-50">
+<div class="single-footer-caption mb-30">
+
+<div class="footer-logo mb-35">
+<a href="index.html"><img class="logof" src="assets/img/logo/logo2_footer.png" alt></a>
+</div>
+<div class="footer-tittle">
+<div class="footer-pera">
+<p>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning  </p>
+</div>
+
+<div class="footer-social">
+<a href="#"><i class="fab fa-twitter-square"></i></a>
+<a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-square"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-pinterest-square"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+<div class="single-footer-caption mb-50">
+<div class="footer-tittle">
+<h4>Navigation</h4>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Transfers</a></li>
+<li><a href="#">Tours</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-2 col-lg-2 col-md-8 col-sm-6">
+<div class="single-footer-caption mb-50">
+<div class="footer-tittle">
+<h4>Transfers</h4>
+<ul>
+<li><a href="#">Short Transfers</a></li>
+<li><a href="#">Long Transfers</a></li>
+<li><a href="#">Airport Transfers</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
+<div class="single-footer-caption mb-50">
+<div class="footer-tittle mb-20">
+<h4>Contact Us</h4>
+<p></p>
+<p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="452120282a28242c297d7c052228242c296b262a28">[email&#160;protected]</a></p>
+</div>
+<ul class="mb-20">
+<li class="number"><a href="#">+20 (12) 005-13381</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-bottom-area">
+<div class="container">
+<div class="footer-border">
+<div class="row">
+<div class="col-xl-12 ">
+<div class="footer-copy-right text-center">
+<p>Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://SethSystems.com" target="_blank" rel="nofollow noopener">SethSystems</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<div id="back-top">
+<a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/jquery.magnific-popup.js"></script>
+<script src="./assets/js/jquery.slicknav.min.js"></script>
+
+<script src="./assets/js/jquery.counterup.min.js"></script>
+<script src="./assets/js/waypoints.min.js"></script>
+<script src="./assets/js/jquery.nice-select.min.js"></script>
+
+<script src="./assets/js/contact.js"></script>
+<script src="./assets/js/jquery.form.js"></script>
+<script src="./assets/js/jquery.validate.min.js"></script>
+<script src="./assets/js/mail-script.js"></script>
+<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+<script src="./assets/js/plugins.js"></script>
+<script src="./assets/js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23581568-13');
+
+      $(document).ready(function() {
+        // Enable reserve button if both From and To are selected
+        $('#from-location, #to-location').on('change', function() {
+            if ($('#from-location').val() && $('#to-location').val()) {
+                $('#reserve-btn').prop('disabled', false);
+            } else {
+                $('#reserve-btn').prop('disabled', true);
+            }
+        });
+    
+        // Show modal on reserve button click
+        $('#reserve-btn').on('click', function() {
+            $('#reservation-modal').modal('show');
+        });
+    });
+  </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"839b7793ad010ff2","b":1,"version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
+</body>
+</html>

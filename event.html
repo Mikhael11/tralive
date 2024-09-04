@@ -1,0 +1,698 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Travel agency</title>
+<meta name="description" content>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/favicon.png">
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/slicknav.css">
+<link rel="stylesheet" href="assets/css/animate.min.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="assets/css/themify-icons.css">
+<link rel="stylesheet" href="assets/css/slick.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.single-window {
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.single-window.selected {
+  border-color: green;
+}
+.single-window.selected::after {
+  content: '✔';
+  color: green;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+</style>
+</head>
+
+<body>
+<header>
+<div class="header-area">
+<div class="main-header header-sticky">
+<div class="container-fluid">
+<div class="row align-items-center">
+
+<div class="col-xl-2 col-lg-2">
+<div class="logo">
+<a href="index.html"><img class="logo" src="assets/img/logo/logo.png" alt></a>
+</div>
+</div>
+<div class="col-xl-10 col-lg-10">
+<div class="menu-wrapper d-flex align-items-center justify-content-end">
+
+<div class="main-menu d-none d-lg-block">
+<nav>
+<ul id="navigation">
+<li><a href="index.html">Home</a></li>
+<li><a href="event.html">Tours</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="#">Transfers</a>
+<ul class="submenu">
+<li><a href="blog.html">Short Transfers</a></li>
+<li><a href="events_details.html">Long Transfers</a></li>
+<li><a href="blog_details.html">Airport Transfers</a></li>
+<!-- <li><a href="elements.html">Element</a></li> -->
+
+</ul>
+</li>
+<li><a href="contact.html">Contact</a></li>
+
+<li class="button-header">
+<a href="#" class="header-btn"> <i class="fas fa-phone-alt"></i> +20 (12) 005 13381</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+
+<div class="col-12">
+<div class="mobile_menu d-block d-lg-none"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+
+<div class="slider-area">
+<div class="single-slider slider-height2 slider-bg2 d-flex align-items-center" height="100%" width="100%">
+<div class="container">
+<div class="row">
+<div class="col-xl-12">
+<div class="hero__caption hero__caption2 text-center">
+<h2>All Tours</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- <section class="services-section section-padding">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-5"> -->
+
+<!-- <div class="section-tittle text-center mb-45 ">
+<span>Check our best promotional tour</span>
+<h2>you can choose your Tours ❤️ </h2>
+</div>
+</div>
+</div>
+<section class="tours-section section-padding">
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-6">
+  <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;" onclick="toggleSelection(this)">
+  <h3>Pyramids Tour</h3>
+  <ul>
+  <li>
+    <label> <input type="checkbox" name="tours" value="Giza Pyramids"> Giza Pyramids
+    </label>
+  </li>
+
+  <li>Sakarra Pyramid</li>
+  <li>Memphis</li>
+  <li>Dahshour</li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6">
+  <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;" onclick="toggleSelection(this)">
+  <h3>Downtown Tour</h3>
+  <ul>
+  <li>Egyptian Museum</li>
+  <li>Salah el Din Citadel</li>
+  <li>Religion Complex</li>
+  <li>Khan El Khalili</li>
+  <li>Civilization Museum</li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6">
+  <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;" onclick="toggleSelection(this)">
+  <h3>Nile Cruise</h3>
+  <ul>
+  <li>Luxor</li>
+  <li>Aswan</li>
+  <li>Kom Ombo</li>
+  <li>Edfu</li>
+  <li>Abu Simbel</li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6">
+  <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;" onclick="toggleSelection(this)">
+  <h3>Fayoum Tour</h3>
+  <ul>
+  <li>Wadi El Rayan</li>
+  <li>Wadi Hitan</li>
+  <li>Tunis Village</li>
+  <li>Magic Lake</li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6">
+  <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;" onclick="toggleSelection(this)">
+  <h3>Alexandria Tour</h3>
+  <ul>
+  <li>Qaitbay Citadel</li>
+  <li>Bibliotheca Alexandrina</li>
+  <li>Montaza Palace</li>
+  <li>Pompey's Pillar</li>
+  <li>Catacombs of Kom El Shoqafa</li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+</div>
+</section> -->
+
+
+<div class="section-tittle text-center mb-45" style="margin-top: 2cm;">
+  <span>Check our best promotional tour</span>
+  <h2>you can choose your Tours ❤️</h2>
+</div>
+<section class="tours-section section-padding">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+                  <h3>Pyramids Tour</h3>
+                  <ul>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Giza Pyramids"> Giza Pyramids
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Sakarra Pyramid"> Sakarra Pyramid
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Memphis"> Memphis
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Dahshour"> Dahshour
+                          </label>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+                  <h3>Downtown Tour</h3>
+                  <ul>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Egyptian Museum"> Egyptian Museum
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Salah el Din Citadel"> Salah el Din Citadel
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Religion Complex"> Religion Complex
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Khan El Khalili"> Khan El Khalili
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Civilization Museum"> Civilization Museum
+                          </label>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+                  <h3>Nile Cruise</h3>
+                  <ul>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Luxor"> Luxor
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Aswan"> Aswan
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Kom Ombo"> Kom Ombo
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Edfu"> Edfu
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Abu Simbel"> Abu Simbel
+                          </label>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+                  <h3>Fayoum Tour</h3>
+                  <ul>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Wadi El Rayan"> Wadi El Rayan
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Wadi Hitan"> Wadi Hitan
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Tunis Village"> Tunis Village
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Magic Lake"> Magic Lake
+                          </label>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+                  <h3>Alexandria Tour</h3>
+                  <ul>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Qaitbay Citadel"> Qaitbay Citadel
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Bibliotheca Alexandrina"> Bibliotheca Alexandrina
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Montaza Palace"> Montaza Palace
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Pompey's Pillar"> Pompey's Pillar
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input type="checkbox" name="tours" value="Catacombs of Kom El Shoqafa"> Catacombs of Kom El Shoqafa
+                          </label>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- <div class="section-tittle text-center mb-45">
+    <span>Check our best promotional tour</span>
+    <h2>you can choose your Tours ❤️</h2>
+</div>
+<section class="tours-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+                    <h3>Pyramids Tour</h3>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Giza Pyramids"> Giza Pyramids
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Sakarra Pyramid"> Sakarra Pyramid
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Memphis"> Memphis
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Dahshour"> Dahshour
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+                    <h3>Downtown Tour</h3>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Egyptian Museum"> Egyptian Museum
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Salah el Din Citadel"> Salah el Din Citadel
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Religion Complex"> Religion Complex
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Khan El Khalili"> Khan El Khalili
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Civilization Museum"> Civilization Museum
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+                    <h3>Nile Cruise</h3>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Luxor"> Luxor
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Aswan"> Aswan
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Kom Ombo"> Kom Ombo
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Edfu"> Edfu
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Abu Simbel"> Abu Simbel
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+                    <h3>Fayoum Tour</h3>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Wadi El Rayan"> Wadi El Rayan
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Wadi Hitan"> Wadi Hitan
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Tunis Village"> Tunis Village
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Magic Lake"> Magic Lake
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single-window mb-30" style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+                    <h3>Alexandria Tour</h3>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Qaitbay Citadel"> Qaitbay Citadel
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Bibliotheca Alexandrina"> Bibliotheca Alexandrina
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Montaza Palace"> Montaza Palace
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Pompey's Pillar"> Pompey's Pillar
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="tours" value="Catacombs of Kom El Shoqafa"> Catacombs of Kom El Shoqafa
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div> -->
+
+
+<!-- <div class="bottom-padding">
+<div class="container">
+<div class="video-area section-img-bg2 d-flex align-items-center" data-background="assets/img/gallery/video-bg.jpg">
+<div class="video-wrap">
+<div class="video-icon">
+<a class="popup-video" href="https://www.youtube.com/watch?v=up68UAfH0d0">
+<img src="assets/img/icon/play-butto.svg" alt>
+</a>
+</div>
+<h3>Watch our last tour</h3>
+</div>
+</div>
+</div>
+</div> -->
+
+
+<!-- <div class="instagram-area fix">
+    <div class="container-fluid p-0">
+    <div class="row">
+    <div class="col-xl-12">
+    <div class="instagram-active owl-carousel">
+    <div class="single-instagram">
+    <img src="assets/img/gallery/instra1.jpg" height="200" width="200" alt>
+    <a href="#"><i class="ti-instagram"></i></a>
+    </div>
+    <div class="single-instagram">
+    <img src="assets/img/gallery/instra2.jpg" height="200" width="200" alt>
+    <a href="#"><i class="ti-instagram"></i></a>
+    </div>
+    <div class="single-instagram">
+    <img src="assets/img/gallery/instra3.jpg" height="200" width="200" alt>
+    <a href="#"><i class="ti-instagram"></i></a>
+    </div>
+    <div class="single-instagram">
+    <img src="assets/img/gallery/instra4.jpg" height="200" width="200" alt>
+    <a href="#"><i class="ti-instagram"></i></a>
+    </div>
+    <div class="single-instagram">
+    <img src="assets/img/gallery/instra5.jpg" height="200" width="200" alt>
+    <a href="#"><i class="ti-instagram"></i></a>
+    </div>
+    <div class="single-instagram">
+    <img src="assets/img/gallery/instra4.jpg" height="200" width="200" alt>
+    <a href="#"><i class="ti-instagram"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div> -->
+
+</main>
+<footer>
+    <div class="footer-wrapper">
+    <div class="footer-area footer-padding">
+    <div class="container">
+    <div class="row justify-content-between">
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+    <div class="single-footer-caption mb-50">
+    <div class="single-footer-caption mb-30">
+    
+    <div class="footer-logo mb-35">
+    <a href="index.html"><img class="logof" class="logof" src="assets/img/logo/logo2_footer.png" alt></a>
+    </div>
+    <div class="footer-tittle">
+    <div class="footer-pera">
+    <p>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning  </p>
+    </div>
+    
+    <div class="footer-social">
+    <a href="#"><i class="fab fa-twitter-square"></i></a>
+    <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-square"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-pinterest-square"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+    <div class="single-footer-caption mb-50">
+    <div class="footer-tittle">
+    <h4>Navigation</h4>
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-8 col-sm-6">
+    <div class="single-footer-caption mb-50">
+    <div class="footer-tittle">
+    <h4>Services</h4>
+    <ul>
+    <li><a href="#">Blackforest</a></li>
+    <li><a href="#">Bodhubon</a></li>
+    <li><a href="#">Rongdhonu</a></li>
+    <li><a href="#">Meghrong</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
+    <div class="single-footer-caption mb-50">
+    <div class="footer-tittle mb-20">
+    <h4>Contact Us</h4>
+    <p>Cairo</p>
+    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3256575f5d5f535b5e0a0b72555f535b5e1c515d5f">[email&#160;protected]</a></p>
+    </div>
+    <ul class="mb-20">
+    <li class="number"><a href="#">+20 (12) 0051-3381</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="footer-bottom-area">
+    <div class="container">
+    <div class="footer-border">
+    <div class="row">
+    <div class="col-xl-12 ">
+    <div class="footer-copy-right text-center">
+    <p>Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a target="_blank" rel="nofollow noopener">SethSystems</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+
+<div id="back-top">
+<a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/jquery.magnific-popup.js"></script>
+<script src="./assets/js/jquery.slicknav.min.js"></script>
+
+<script src="./assets/js/jquery.counterup.min.js"></script>
+<script src="./assets/js/waypoints.min.js"></script>
+<script src="./assets/js/jquery.nice-select.min.js"></script>
+
+<script src="./assets/js/contact.js"></script>
+<script src="./assets/js/jquery.form.js"></script>
+<script src="./assets/js/jquery.validate.min.js"></script>
+<script src="./assets/js/mail-script.js"></script>
+<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+<script src="./assets/js/plugins.js"></script>
+<script src="./assets/js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script>
+  function toggleSelection(element) {
+      element.classList.toggle('selected');
+  }
+  </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"839b778d5b850ff2","b":1,"version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
+</body>
+</html>
